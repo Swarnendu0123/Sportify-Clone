@@ -266,6 +266,7 @@ a {
 /* music player */
 .music-player {
     display: flex;
+    justify-content: space-between;
     height: 100px;
     width: 100vw;
     position: fixed;
@@ -281,7 +282,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 45%;
 }
 
 .player-upper {
@@ -318,7 +319,7 @@ a {
     width: 100%;
 }
 
-.player-bottom .progress-bar {
+.progress-bar {
     background: transparent;
     cursor: pointer;
     appearance: none;
@@ -339,6 +340,29 @@ a {
     width: 16px;
     background-color: #1bd760;
 }
+.progress-bar2 {
+    background: transparent;
+    cursor: pointer;
+    appearance: none;
+    width: 35%;
+}
+
+.progress-bar2::-webkit-slider-runnable-track {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    height: 6px;
+}
+
+.progress-bar2::-webkit-slider-thumb {
+    appearance: none;
+    transform: translateY(-5px);
+    border-radius: 10px;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+}
+
+
 
 .controls {
     width: 25%;
@@ -354,10 +378,12 @@ a {
 }
 
 .album-img {
-    padding: 20px 10px 20px 20px;
-    height: 60px;
+    padding: 10px 10px 10px 10px;
+    height: 75px;
+    border-radius: 15px;
 }
-.playing-now{
+
+.playing-now {
     margin-right: 60px;
 }
 
@@ -373,6 +399,10 @@ a {
     height: 25px;
 }
 
+.liked:hover {
+    opacity: 1;
+}
+
 .pip {
     height: 35px;
 }
@@ -386,6 +416,32 @@ a {
     opacity: .6;
     margin: 10px 0 0 0;
     padding: 0;
+}
+
+.controls{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.icon1{
+    width: 30px;
+}
+.icon2{
+    width: 27px;
+}
+.icon3{
+    opacity: .65;
+    width: 25px;
+}
+.icon4{
+    opacity: .65;
+    width: 25px;
+}
+.icon5{
+    width: 30px;
 }
 
 /* footer */
