@@ -324,12 +324,14 @@ a {
     appearance: none;
     width: 85%;
 }
-.progress-bar::-webkit-slider-runnable-track{
+
+.progress-bar::-webkit-slider-runnable-track {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     height: 6px;
 }
-.progress-bar::-webkit-slider-thumb{
+
+.progress-bar::-webkit-slider-thumb {
     appearance: none;
     transform: translateY(-5px);
     border-radius: 10px;
@@ -346,8 +348,45 @@ a {
     font-weight: 100;
 }
 
+.album {
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.album-img {
+    padding: 20px 10px 20px 20px;
+    height: 60px;
+}
+.playing-now{
+    margin-right: 60px;
+}
 
+.now-playing-icons {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.liked {
+    opacity: .7;
+    height: 25px;
+}
+
+.pip {
+    height: 35px;
+}
+
+.song-title {
+    margin: 25px 0 0 0;
+}
+
+.song-artists {
+    font-size: small;
+    opacity: .6;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
 
 /* footer */
 .footer {
@@ -368,7 +407,7 @@ a {
     justify-content: space-around;
 }
 
-.social a i{
+.social a i {
     opacity: .7;
     transform: scale(1.5);
 }
