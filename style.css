@@ -368,12 +368,12 @@ a {
     justify-content: space-around;
 }
 
-.social i {
+.social a i{
     opacity: .7;
     transform: scale(1.5);
 }
 
-.social i:hover {
+.social a i:hover {
     opacity: 1;
 }
 
