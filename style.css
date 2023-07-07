@@ -108,8 +108,10 @@ a {
 }
 
 .white-btn {
+    transition: .2s;
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 10px;
     font-weight: 600;
     height: 30px;
     border: none;
@@ -119,10 +121,12 @@ a {
 }
 
 .black-btn {
+    transition: .2s;
     margin-top: 3px;
     padding-left: 15px;
     padding-right: 15px;
     font-weight: 600;
+    font-size: 10px;
     height: 30px;
     border: none;
     border-radius: 15px;
@@ -165,6 +169,12 @@ a {
     background-color: #000000;
 }
 
+.left-arrow:hover,
+.right-arrow:hover,
+.profile:hover {
+    transform: scale(1.2);
+}
+
 .arrows {
     align-items: center;
     display: flex;
@@ -178,6 +188,20 @@ a {
     justify-content: space-between;
     display: flex;
     width: 350px;
+}
+
+@media (max-width:1000px) {
+    .right-arrow {
+        display: none;
+    }
+
+    .explore-premium {
+        display: none;
+    }
+
+    .main-nav-right {
+        width: 200px;
+    }
 }
 
 /* main content */
@@ -197,12 +221,12 @@ a {
 /* catagory */
 .row {
     flex-wrap: wrap;
-    white-space: nowrap;
     display: flex;
 }
 
 .catagory-title {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 700;
     padding: 20px 0 20px 20px;
 }
 
@@ -211,6 +235,7 @@ a {
     margin: 0 20px;
     border-radius: 10px;
     width: 13vw;
+    min-width: 150px;
     background-color: #191919;
     padding: 10px;
 }
@@ -219,20 +244,23 @@ a {
     background-color: #232323;
 }
 
-.card-text h5 {
+.card-text .card-title {
+    font-weight: 700;
+    font-size: medium;
     margin: 10px 0 0 0;
 }
 
-.card-text p {
-    font-weight: 100;
+.card-info {
+    font-weight: 500;
     font-size: small;
     margin: 10px 0 20px 0;
+    opacity: .7;
 }
+
 
 .card .card-img img {
     border-radius: 10px;
     width: 100%;
-
 }
 
 /* music player */
