@@ -282,12 +282,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: 500px;
 }
 
 .player-upper {
     padding-top: 20px;
     width: 40%;
+    min-width: 200px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -479,4 +480,39 @@ a {
 .sub-heading:hover {
     text-decoration: underline;
     opacity: 1;
+}
+
+@media(max-width:840px){
+    .sidebar{
+        display: none;
+    }
+    .controls{
+        display: none;
+    }
+    .footer{
+        height: 350px;
+    }
+    .playing-now{
+        margin: 0;
+    }
+    .now-playing-icons{
+        display: none;
+    }
+}
+@media(max-width:750px){
+.album{
+    display: none;
+}
+.player{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 90vw;
+}
+}
+@media(max-width:500px){
+    .player{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+    }
 }
